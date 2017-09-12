@@ -18,7 +18,6 @@ namespace Script
         object Clone();
     } */
 
-    /* not used
     public class Tuple<T1>
     {
         public T1 Item1 { get; private set; }
@@ -28,7 +27,6 @@ namespace Script
             Item1 = t1;
         }
     }
-    */
 
     public class NotImplementedException : Exception { }
 
@@ -44,7 +42,6 @@ namespace Script
         }
     }
 
-    /* not used
     public class Tuple<T1, T2, T3>
     {
         public T1 Item1 { get; private set; }
@@ -58,6 +55,5 @@ namespace Script
             Item3 = t3;
         }
     }
-    */
     #endregion // ingame script end
 }
