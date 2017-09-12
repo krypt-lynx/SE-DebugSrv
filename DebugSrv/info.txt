@@ -1,0 +1,35 @@
+﻿// DebugSrv v2.2
+/*
+Instalation:
+- install Programable Block and load this script into it (seems like you already done this step)
+- rename it to "DebugSrv"
+- install lcd panel and add "|debuglog" to the and of its name.
+Optional:
+- install a timer block, add "|debugtimer" to the and of its name
+- setup the timer block to run DebugSrv without parameters.
+
+Usage:
+To log something use this method:
+
+void Log(string message)
+{
+    var dServer = GridTerminalSystem.GetBlockWithName("DebugSrv") as IMyProgrammableBlock;
+    if (dServer != null) { dServer.TryRun("L" + message); }
+}
+
+Commands:
+L+message: log message
+R: reinit
+
+Changelog: 
+2.2
+* "R" now works as intended 
+
+2.1 
+* "Script Too Complex" fixed 
+ 
+2.0 
++ Using timer to save caller instructions  
+! Log receiving format was changed 
+
+*/
